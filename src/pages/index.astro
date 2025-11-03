@@ -1,11 +1,23 @@
 ---
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import "../styles/global.css";
 ---
 
 <Layout>
-	<Welcome />
+  <div class="flex flex-col gap-4 p-12 bg-slate-900">
+    <div class="flex flex-col gap-2">
+      <h1 class="text-4xl text-white/90">Mykhailo(Michael) Grushko</h1>
+      <h2 class="text-2xl text-white/70 font-normal">Student & Software Developer</h2>
+    </div>
+    <button class="btn text-lg text-white p-1 px-3 mt-2 w-30 hover:bg-white/5">Read more</button>
+  </div>
+  <div class="flex flex-col p-12 bg-orange-900">
+    <h1 class="text-4xl text-white/90 font-medium mb-12 ">Projects</h1>
+    <div class="flex gap-12">
+    <div class="border border-white w-80 h-80"></div>
+    <div class="border border-white w-80 h-80"></div>
+    </div>
+  </div>
+
 </Layout>
